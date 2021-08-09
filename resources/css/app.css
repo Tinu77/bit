@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+
+
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@layer base {
+    @font-face {
+        font-family: "Gilroy";
+        font-weight: 400;
+        font-style: normal;
+        src: url("/css/fonts/Gilroy-Regular.woff2") format("woff2"),
+        url("/css/fonts/Gilroy-Regular.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Gilroy";
+        font-weight: 500;
+        font-style: normal;
+        src: url("/css/fonts/Gilroy-Medium.woff2") format("woff2"),
+        url("/css/fonts/Gilroy-Medium.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Gilroy";
+        font-weight: 600;
+        font-style: normal;
+        src: url("/css/fonts/Gilroy-SemiBold.woff2") format("woff2"),
+        url("/css/fonts/Gilroy-SemiBold.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Gilroy";
+        font-weight: 700;
+        font-style: normal;
+        src: url("/css/fonts/Gilroy-Bold.woff2") format("woff2"),
+        url("/css/fonts/Gilroy-Bold.woff") format("woff");
+
+    }
+
+    * {
+        @apply tracking-wider;
+    }
+}

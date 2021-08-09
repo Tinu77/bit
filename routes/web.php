@@ -1,5 +1,8 @@
 <?php
 
+use App\Domain\Pages\Home;
+use App\Domain\Pages\RegisterPage;
+use App\Domain\Pages\ViewData;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', Home::class);
+Route::get('/bit-register', RegisterPage::class);
+Route::get('/view-data', ViewData::class);
+
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
