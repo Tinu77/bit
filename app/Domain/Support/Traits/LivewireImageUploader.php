@@ -8,7 +8,7 @@ use App\Domain\Bit\Models\Image;
 use Livewire\TemporaryUploadedFile;
 use Livewire\WithFileUploads;
 
-class LivewireImageUploader
+Trait LivewireImageUploader
 {
     use WithFileUploads;
 

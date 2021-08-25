@@ -14,6 +14,7 @@
 </head>
 <body class="font-sans antialiased tracking-wider bg-gray-100">
     <div class="min-h-screen">
+        <livewire:flash-container />
         {{ $slot }}
     </div>
 </body>
